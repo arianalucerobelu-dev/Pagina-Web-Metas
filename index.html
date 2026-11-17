@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>metas | ropa y accesorios</title>
+  <meta name="description" content="metas: ropa y accesorios con estilo propio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header class="topbar" id="topbar">
+    <a href="#inicio" class="logo">metas</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#coleccion">Colección</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto" class="nav-cta">Instagram</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <p class="hero-top">Ropa y accesorios</p>
+      <h1 class="hero-title">metas</h1>
+      <div class="hero-bottom">
+        <p class="hero-text">Prendas para vestir tus días con calma, comodos y buen gusto.</p>
+        <a href="#coleccion" class="btn btn-light">Ver colección</a>
+      </div>
+    </section>
+
+    <!-- COLECCIÓN: 4 ESPACIOS PARA IMÁGENES -->
+    <section class="coleccion" id="coleccion">
+      <div class="section-head">
+        <h2>Lo nuevo en metas</h2>
+        <p>Una selección de prendas y accesorios para esta temporada.</p>
+      </div>
+
+      <!--
+        PARA PONER TUS IMÁGENES:
+        guárdalas en la carpeta "imagenes" y cambia el nombre del archivo en cada src.
+        También puedes cambiar el nombre y el tipo (figcaption) de cada producto.
+      -->
+      <div class="grid">
+        <figure class="slot slot-1">
+          <img src="./WhatsApp Image 2026-11-17 at 9.42.33 AM.jpeg" alt="Prenda 1 de metas">
+          <div class="placeholder"><span>Imagen 1</span></div>
+          <figcaption><strong>Prenda 1</strong><span>Ropa</span></figcaption>
+        </figure>
+
+        <figure class="slot slot-2">
+          <img src="./WhatsApp Image 2026-11-17 at 9.42.32 AM.jpeg" alt="Prenda 2 de metas">
+          <div class="placeholder"><span>Imagen 2</span></div>
+          <figcaption><strong>Prenda 2</strong><span>Ropa</span></figcaption>
+        </figure>
+
+        <figure class="slot slot-3">
+          <img src="./WhatsApp Image 2026-11-17 at 9.42.32 AM (1).jpeg" alt="Accesorio 1 de metas">
+          <div class="placeholder"><span>Imagen 3</span></div>
+          <figcaption><strong>Accesorio 1</strong><span>Accesorios</span></figcaption>
+        </figure>
+
+        <figure class="slot slot-4">
+          <img src="./WhatsApp Image 2026-11-17 at 9.42.32 AM.jpeg" alt="Accesorio 2 de metas">
+          <div class="placeholder"><span>Imagen 4</span></div>
+          <figcaption><strong>Accesorio 2</strong><span>Accesorios</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="nosotros" id="nosotros">
+      <h2>Ropa que te acompaña a cumplir tus metas.</h2>
+      <p>En metas elegimos prendas y accesorios cómodos, versátiles y fáciles de combinar. Te mostramos cada novedad en Instagram, donde también puedes escribirnos para pedir.</p>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="contacto" id="contacto">
+      <p class="contacto-label">Pedidos y novedades</p>
+      <a href="#" class="ig-link" data-instagram>@metas.vm</a>
+      <a href="#" class="btn btn-dark" data-instagram>Abrir Instagram</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="logo">metas</span>
+    <span>© <span id="year"></span> metas. Todos los derechos reservados.</span>
+    <a href="" data-instagram>@metas.vm</a>
+  </footer>
+
+  
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
